@@ -1,0 +1,11 @@
+--- origsrc/CMakeLists.txt	2014-04-29 14:56:16.000000000 -0500
++++ src/CMakeLists.txt	2014-06-08 19:08:30.693449800 -0500
+@@ -32,7 +32,7 @@ set(qtlxqt_SRCS
+   qguiplatformplugin_p.h
+ )
+ 
+-add_library(qtlxqt SHARED ${qtlxqt_SRCS})
++add_library(qtlxqt MODULE ${qtlxqt_SRCS})
+ 
+ target_link_libraries(qtlxqt
+   ${QT_QTCORE_LIBRARY}
