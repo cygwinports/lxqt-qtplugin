@@ -15,7 +15,4 @@ PATCH_URI="
 	0.8.0-cmake-install.patch
 "
 
-CXXFLAGS+=" -I/usr/include/qt5/QtGui/$(${PKG_CONFIG} --modversion Qt5Gui)/QtGui"
-CXXFLAGS+=" -I/usr/include/qt5/QtCore/$(${PKG_CONFIG} --modversion Qt5Core)/QtCore"
-
 export USE_QT5=1
