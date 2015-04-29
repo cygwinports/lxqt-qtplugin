@@ -1,0 +1,11 @@
+--- origsrc/lxqt-qtplugin-0.9.0/src/CMakeLists.txt	2015-01-18 14:32:53.000000000 -0600
++++ src/lxqt-qtplugin-0.9.0/src/CMakeLists.txt	2015-04-28 19:27:55.703653800 -0500
+@@ -8,7 +8,7 @@ set(qtlxqt_SRCS
+     lxqtplatformtheme.cpp
+ )
+ 
+-add_library(qtlxqt SHARED ${qtlxqt_SRCS})
++add_library(qtlxqt MODULE ${qtlxqt_SRCS})
+ 
+ target_link_libraries(qtlxqt
+     Qt5::Widgets

@@ -1,0 +1,22 @@
+--- origsrc/lxqt-qtplugin-0.9.0/src/lxqtplatformtheme.h	2015-01-18 14:32:53.000000000 -0600
++++ src/lxqt-qtplugin-0.9.0/src/lxqtplatformtheme.h	2015-04-28 19:30:07.421879900 -0500
+@@ -35,7 +35,7 @@
+ #include <QFileSystemWatcher>
+ #include <QFont>
+ 
+-class Q_GUI_EXPORT LXQtPlatformTheme : public QObject, public QPlatformTheme {
++class LXQtPlatformTheme : public QObject, public QPlatformTheme {
+     Q_OBJECT
+ public:
+     LXQtPlatformTheme();
+--- origsrc/lxqt-qtplugin-0.9.0/src/qiconloader_p.h	2015-01-18 14:32:53.000000000 -0600
++++ src/lxqt-qtplugin-0.9.0/src/qiconloader_p.h	2015-04-28 19:30:22.419284300 -0500
+@@ -155,7 +155,7 @@ private:
+     bool m_valid;
+ };
+ 
+-class Q_GUI_EXPORT QIconLoader : public QObject
++class QIconLoader : public QObject
+ {
+ public:
+     QIconLoader();
