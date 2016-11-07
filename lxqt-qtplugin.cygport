@@ -1,7 +1,7 @@
 inherit qt5 cmake
 
 NAME="lxqt-qtplugin"
-VERSION=0.9.0
+VERSION=0.11.0
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="LXQt GUI platform plugin for Qt4"
@@ -11,6 +11,8 @@ lightweight, modular, blazing-fast and user-friendly desktop environment."
 HOMEPAGE="http://lxqt.org/"
 SRC_URI="http://downloads.lxqt.org/lxqt/${VERSION}/${NAME}-${VERSION}.tar.xz"
 PATCH_URI="
-	0.9.0-cmake-install.patch
+	0.10.0-cmake-install.patch
 	0.9.0-dllexport.patch
 "
+
+CYGCMAKE_ARGS="-DPULL_TRANSLATIONS=OFF"
