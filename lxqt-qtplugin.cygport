@@ -2,7 +2,7 @@ inherit qt5 cmake
 
 NAME="lxqt-qtplugin"
 VERSION=0.11.0
-RELEASE=1
+RELEASE=2
 CATEGORY="X11"
 SUMMARY="LXQt GUI platform plugin for Qt4"
 DESCRIPTION="LXQt is the Qt port and the upcoming version of LXDE. It is the
